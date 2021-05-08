@@ -1,0 +1,58 @@
+#main {
+  background-color: rgb(221, 248, 248);
+  max-width: 1100px;
+  margin: auto;
+}
+
+section {
+  margin: 1rem 0;
+}
+
+section h2 {
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.main_title {
+  border-bottom: 1px solid black;
+}
+
+.main_title h1 {
+  font-size: 5rem;
+}
+
+.main_title p {
+  font-size: 1.5rem;
+}
+
+.main_hero {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.main_hero img {
+  max-width: 20rem;
+  width: 100%;
+}
+
+.main_hero figcaption {
+  padding: 0.5rem 0;
+}
+
+#profile {
+  margin: 2rem 0;
+}
+
+footer {
+  font-weight: bold;
+}
