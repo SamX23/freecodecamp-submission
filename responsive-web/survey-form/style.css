@@ -1,0 +1,25 @@
+:root {
+  --primary: #344fa1;
+  --secondary: #3d84b8;
+  --font: #fffadc;
+  --bg: #3f3697;
+}
+
+main {
+  height: 100vh;
+  background-color: var(--primary);
+}
+
+.survey {
+  color: var(--font);
+}
+
+.survey_title {
+  margin-bottom: 2rem;
+}
+
+.survey_form {
+  padding: 1rem;
+  background-color: var(--secondary);
+  border-radius: 25px;
+}
