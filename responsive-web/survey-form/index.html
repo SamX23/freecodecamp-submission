@@ -19,39 +19,59 @@
         <div class="survey">
           <div class="row">
             <div class="col survey_title text-center">
-              <h1>Survey Form</h1>
-              <p>
+              <h1 id="title">Survey Form</h1>
+              <p id="description">
                 Please take your time to help us improve our service, thank you!
               </p>
             </div>
           </div>
           <div class="row">
             <div class="col survey_form">
-              <form>
+              <form id="survey-form">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
+                  <label id="name-label" for="name" class="form-label"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="inputName"
+                    placeholder="Sami Kalammallah"
+                  />
+                </div>
+
+                <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+                <div class="mb-3">
+                  <label id="email-label" for="email" class="form-label"
                     >Email address</label
                   >
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleInputEmail1"
+                    id="email"
                     aria-describedby="emailHelp"
+                    placeholder="email@domain.com"
                   />
                   <div id="emailHelp" class="form-text">
                     We'll never share your email with anyone else.
                   </div>
                 </div>
+
+                <!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
+                  <label id="number-label" for="number" class="form-label"
+                    >Number</label
                   >
                   <input
-                    type="password"
+                    type="number"
                     class="form-control"
-                    id="exampleInputPassword1"
+                    id="number"
+                    aria-describedby="inputNumber"
+                    placeholder="12345"
                   />
                 </div>
+
                 <div class="mb-3 form-check">
                   <input
                     type="checkbox"
@@ -62,12 +82,21 @@
                     >Check me out</label
                   >
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
+
+                <select
+                  id="dropdown"
+                  class="form-select"
+                  aria-label="Select Option"
+                >
+                  <option selected>Option</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
+
+                <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+                <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+                <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
                 <div class="form-check">
                   <input
                     class="form-check-input"
@@ -79,6 +108,7 @@
                     Default radio
                   </label>
                 </div>
+
                 <div class="form-check">
                   <input
                     class="form-check-input"
@@ -91,7 +121,10 @@
                     Default checked radio
                   </label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+                <button id="submit" type="submit" class="btn btn-primary">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
