@@ -1,0 +1,61 @@
+:root {
+  --primary: rgb(238, 238, 238);
+  --secondary: rgb(170, 216, 211);
+  --text: rgb(57, 62, 70);
+  --bg: rgb(0, 170, 179);
+}
+
+nav {
+  height: 10vh;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+nav .container,
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_menu ul,
+.footer_right ul {
+  display: flex;
+  margin: unset;
+}
+
+li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+li a:hover {
+  color: var(--secondary);
+}
+
+main {
+  min-height: 80vh;
+  padding: 1rem 0;
+  color: var(--text);
+  background-color: var(--secondary);
+}
+
+.col .row {
+  height: auto;
+}
+
+footer {
+  height: 10vh;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+.footer_left p {
+  margin: unset;
+}
