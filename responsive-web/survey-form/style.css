@@ -1,7 +1,7 @@
 :root {
-  --primary: #344fa1;
-  --secondary: #3d84b8;
-  --font: #fffadc;
+  --primary: #546db8;
+  --secondary: #7aabce;
+  --font: #000000;
   --bg: #3f3697;
 }
 
@@ -19,7 +19,7 @@ main {
 }
 
 .survey_form {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background-color: var(--secondary);
   border-radius: 25px;
 }
