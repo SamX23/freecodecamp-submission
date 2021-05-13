@@ -14,21 +14,22 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <main class="d-flex">
-      <div class="container m-auto">
+    <main class="d-flex h-100">
+      <div class="container my-5">
         <div class="survey">
           <div class="row">
             <div class="col survey_title text-center">
-              <h1 id="title">Survey Form</h1>
+              <h1 id="title" class="fw-bold">Survey Form</h1>
               <p id="description">
-                Please take your time to help us improve our service, thank you!
+                Please take your time to help us improve our email marketing
+                service, thank you!
               </p>
             </div>
           </div>
           <div class="row">
             <div class="col survey_form">
               <form id="survey-form">
-                <div class="mb-3">
+                <div class="my-3">
                   <label id="name-label" for="name" class="form-label"
                     >Name</label
                   >
@@ -36,13 +37,14 @@
                     type="text"
                     class="form-control"
                     id="name"
-                    aria-describedby="inputName"
-                    placeholder="Sami Kalammallah"
+                    aria-describedby="input your name"
+                    placeholder="Your name"
+                    required
                   />
                 </div>
 
                 <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
-                <div class="mb-3">
+                <div class="my-3">
                   <label id="email-label" for="email" class="form-label"
                     >Email address</label
                   >
@@ -50,76 +52,158 @@
                     type="email"
                     class="form-control"
                     id="email"
-                    aria-describedby="emailHelp"
-                    placeholder="email@domain.com"
+                    aria-describedby="input your email"
+                    placeholder="Your active email"
+                    required
                   />
-                  <div id="emailHelp" class="form-text">
+                  <div id="emailHelp" class="form-text text-black-50">
                     We'll never share your email with anyone else.
                   </div>
                 </div>
 
                 <!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
-                <div class="mb-3">
+                <div class="my-3">
                   <label id="number-label" for="number" class="form-label"
-                    >Number</label
+                    >Phone Number</label
                   >
                   <input
                     type="number"
                     class="form-control"
                     id="number"
-                    aria-describedby="inputNumber"
-                    placeholder="12345"
+                    aria-describedby="input phone number"
+                    placeholder="Your phone number"
+                    min="10"
+                    max="15"
                   />
                 </div>
 
-                <div class="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label class="form-check-label" for="exampleCheck1"
-                    >Check me out</label
+                <div class="my-3">
+                  <label class="mb-2" for="dropdown"
+                    >Select your preference</label
                   >
+                  <select
+                    id="dropdown"
+                    class="form-select"
+                    aria-label="Select Your Package"
+                  >
+                    <option value="1">For professional/work</option>
+                    <option value="2">For hobbies</option>
+                    <option value="3">For trial</option>
+                  </select>
                 </div>
 
-                <select
-                  id="dropdown"
-                  class="form-select"
-                  aria-label="Select Option"
-                >
-                  <option selected>Option</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <div class="my-3">
+                  <label class="mb-2" for="checkbox-option"
+                    >Select your most used feature</label
+                  >
+                  <fieldset id="checkbox-option">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="checkone"
+                        value="checkone"
+                      />
+                      <label class="form-check-label" for="checkone"
+                        >Broadcast</label
+                      >
+                    </div>
 
-                <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
-                <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
-                <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault1"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
-                  </label>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="checktwo"
+                        value="checktwo"
+                      />
+                      <label class="form-check-label" for="checktwo"
+                        >Autoresponder</label
+                      >
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="checktwo"
+                        value="checktwo"
+                      />
+                      <label class="form-check-label" for="checktwo"
+                        >Form and landing pages</label
+                      >
+                    </div>
+                  </fieldset>
                 </div>
 
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault2"
-                    checked
-                  />
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
-                  </label>
+                <div class="my-3">
+                  <fieldset>
+                    <label class="mb-2" for="radio-selector"
+                      >Worth the price ?</label
+                    >
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio-selector"
+                        id="radio-option-1"
+                        value="expensive"
+                        checked
+                      />
+                      <label class="form-check-label" for="radio-option-1">
+                        Expensive
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio-selector"
+                        id="radio-option-2"
+                        value="standard"
+                      />
+                      <label class="form-check-label" for="radio-option-2">
+                        Standard
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio-selector"
+                        id="radio-option-3"
+                        value="cheap"
+                      />
+                      <label class="form-check-label" for="radio-option-3">
+                        Cheap
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio-selector"
+                        id="radio-option-4"
+                        value="free"
+                      />
+                      <label class="form-check-label" for="radio-option-4">
+                        Should be free
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="mb-4">
+                  <label for="textarea" class="form-label"
+                    >Please describe your additional feedback (Optional)</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="textarea"
+                    rows="3"
+                  ></textarea>
                 </div>
 
                 <button id="submit" type="submit" class="btn btn-primary">
