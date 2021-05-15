@@ -5,10 +5,17 @@
   --bg: rgb(0, 170, 179);
 }
 
+body {
+  background-color: var(--secondary);
+}
+
 nav {
-  height: 10vh;
+  height: 7vh;
   background-color: var(--bg);
   color: var(--primary);
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 nav .container,
@@ -39,19 +46,35 @@ li a:hover {
   color: var(--secondary);
 }
 
+.hero_element {
+  display: flex;
+  margin-top: 7vh;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+.hero_title {
+  padding: 1rem;
+}
+
 main {
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 1rem 0;
   color: var(--text);
-  background-color: var(--secondary);
 }
 
 .col .row {
   height: auto;
 }
 
+#submit {
+  display: none;
+}
+
 footer {
-  height: 10vh;
+  height: 5vh;
   background-color: var(--bg);
   color: var(--primary);
 }
