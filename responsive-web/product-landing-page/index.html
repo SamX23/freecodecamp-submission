@@ -14,33 +14,76 @@
     <title>Product Landing Pages</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="header">
+      <nav id="nav-bar">
         <div class="container">
-          <div class="nav_logo">HOME</div>
+          <div class="nav_logo">
+            <img id="header-img" src="#" alt="HOME" />
+          </div>
           <div class="nav_menu">
             <ul class="fw-bolder">
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#features">FEATURES</a></li>
-              <li><a href="#pricing">PRICING</a></li>
+              <li><a class="nav-link" href="#about">ABOUT</a></li>
+              <li><a class="nav-link" href="#features">FEATURES</a></li>
+              <li><a class="nav-link" href="#pricing">PRICING</a></li>
             </ul>
           </div>
         </div>
       </nav>
+      <div class="hero_element">
+        <div class="hero_title text-center">
+          <h1>SAMI KALAMMALLAH</h1>
+          <p>A professional web developer</p>
+        </div>
+      </div>
     </header>
 
     <main>
       <div class="container">
         <div class="col">
-          <div class="row">Hero Element</div>
           <div class="row" id="about">
             <h2>About</h2>
           </div>
           <div class="row" id="features">
             <h2>Features</h2>
+            <iframe
+              id="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/FUcmQXd4qwI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="row" id="pricing">
             <h2>Pricing</h2>
+          </div>
+
+          <div class="row" id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact">
+              <form
+                id="form"
+                action="https://www.freecodecamp.com/email-submit"
+              >
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="inputEmail"
+                    aria-describedby="emailHelp"
+                    placeholder="Please add your email"
+                  />
+                </div>
+                <input id="submit" type="submit" value="Submit" />
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -55,10 +98,11 @@
           <ul>
             <li><a href="#">Privacy</a></li>
             <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </footer>
   </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
