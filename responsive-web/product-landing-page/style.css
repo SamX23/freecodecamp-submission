@@ -69,6 +69,20 @@ main {
   height: auto;
 }
 
+.row {
+  margin: auto;
+  max-width: 900px;
+}
+
+.row h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.card {
+  border-radius: 25px;
+}
+
 #submit {
   display: none;
 }
