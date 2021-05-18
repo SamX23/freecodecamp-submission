@@ -32,7 +32,8 @@ footer .container {
   margin: unset;
 }
 
-li {
+.nav_menu li,
+.footer_right li {
   list-style-type: none;
   margin: 0 1rem;
 }
@@ -80,7 +81,12 @@ main {
 }
 
 .card {
-  border-radius: 25px;
+  border-radius: 15px;
+}
+
+.card ul {
+  text-align: left;
+  padding-bottom: 1rem;
 }
 
 #submit {
