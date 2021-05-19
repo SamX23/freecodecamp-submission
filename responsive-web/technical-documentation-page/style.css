@@ -34,10 +34,48 @@ main {
   color: black;
 }
 
-sup a {
-  text-decoration: none;
-}
-
 section p {
   text-align: justify;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.features_item {
+  max-width: 17rem;
+  width: 100%;
+}
+
+.features_item:nth-child(2) {
+  padding: 0 0.5rem;
+}
+
+.features_item h2 {
+  font-size: 1.2rem;
+  color: rgb(143, 143, 143);
+  padding: 0.5rem 0;
+}
+
+#how_to_start li {
+  list-style-type: decimal;
+}
+
+.code {
+  background-color: #282c34;
+  padding: 1rem;
+  margin: 1.2rem auto;
+  border-radius: 10px;
+  max-width: 780px;
+  min-width: 25rem;
+}
+
+.code code {
+  color: rgb(125, 166, 255);
+  display: block;
+}
+
+.code .code_comment {
+  color: rgb(110, 110, 110);
 }
