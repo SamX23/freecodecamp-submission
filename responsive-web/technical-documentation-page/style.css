@@ -1,4 +1,43 @@
+body {
+  display: flex;
+}
+
+nav {
+  width: 25%;
+  border-right: 0.2rem solid black;
+}
+
 main {
+  width: 75%;
   min-height: 100vh;
   padding: 1rem 0;
+}
+
+.nav_title {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid gray;
+}
+
+.nav_menu ul {
+  padding: 0;
+}
+
+.nav_menu li {
+  list-style-type: none;
+  border-bottom: 2px dashed gray;
+}
+
+.nav_menu a {
+  padding: 2rem;
+  font-size: x-large;
+  color: black;
+}
+
+sup a {
+  text-decoration: none;
+}
+
+section p {
+  text-align: justify;
 }
