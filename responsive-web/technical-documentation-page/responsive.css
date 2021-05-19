@@ -1,0 +1,20 @@
+@media (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    border-right: unset;
+    border-bottom: 0.2rem solid black;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .nav_menu a {
+    text-align: center;
+    padding: 0rem;
+  }
+}
