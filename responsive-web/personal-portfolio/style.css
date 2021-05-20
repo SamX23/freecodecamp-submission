@@ -1,0 +1,22 @@
+nav {
+  position: fixed;
+  top: 0;
+}
+.fullscreen_section {
+  display: grid;
+  position: relative;
+  min-height: 100vh;
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
+
+.fullscreen_section div {
+  margin: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
