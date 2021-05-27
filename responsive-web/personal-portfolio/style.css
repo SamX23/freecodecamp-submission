@@ -2,6 +2,7 @@ nav {
   position: fixed;
   top: 0;
 }
+
 .fullscreen_section {
   display: grid;
   position: relative;
@@ -12,6 +13,38 @@ nav {
 
 .fullscreen_section div {
   margin: auto;
+}
+
+.projects {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.project-tile {
+  margin: 0 1rem;
+}
+
+.contact_link {
+  display: flex;
+  font-size: 3rem;
+}
+
+.contact_link a {
+  margin: 0 1rem;
+}
+
+.contact_link a:nth-child(2) {
+  color: orange;
+}
+
+.contact_link a:nth-child(3) {
+  color: gainsboro;
+}
+
+.contact_link a:nth-child(4) {
+  color: green;
 }
 
 footer {
