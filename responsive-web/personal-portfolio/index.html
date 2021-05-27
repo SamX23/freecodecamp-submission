@@ -10,6 +10,10 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Sami Kalammallah | Simple Portfolio</title>
   </head>
@@ -19,47 +23,91 @@
         <div class="nav_title">TITLE</div>
         <div class="nav_menu">
           <ul>
-            <li><a href="#project">Project</a></li>
+            <li><a href="#projects">Project</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <div class="fullscreen_section" id="welcome-section">
-        <div class="hero_title">
-          <h1>Sami Kalammallah</h1>
-          <p>An Ultimate Front End Web Developer</p>
+        <div class="hero_title text-center">
+          <h1>SAMI KALAMMALLAH</h1>
+          <p>An Ultimate Web Developer</p>
         </div>
       </div>
       <div class="container">
         <div id="projects" class="projects">
           <div class="project-tile">
-            <h2>Project</h2>
-            <a href="#"></a>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Group Chat App</h5>
+                <p class="card-text">
+                  A simple group chat app created using React.
+                </p>
+                <a
+                  href="https://chatgroup23.vercel.app/"
+                  class="btn btn-primary"
+                  >Demo</a
+                >
+              </div>
+            </div>
           </div>
           <div class="project-tile">
-            <h2>Project</h2>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Movie DB App</h5>
+                <p class="card-text">A web app shows latest movies.</p>
+                <a
+                  href="https://simple-moviedb.web.app/"
+                  class="btn btn-primary"
+                  >Demo</a
+                >
+              </div>
+            </div>
           </div>
           <div class="project-tile">
-            <h2>Project</h2>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Ultimate Blog</h5>
+                <p class="card-text">
+                  An ultimate blog built using next js and typescript.
+                </p>
+                <a href="https://kalammallah.now.sh/" class="btn btn-primary"
+                  >Demo</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="fullscreen_section">
         <div class="contact">
-          <h2>Footer</h2>
-          <div class="contact_link">
+          <h2 class="text-center p-2">Contacts :</h2>
+          <div class="contact_link m-2">
+            <a href="https://web.facebook.com/SamiKalamallah/" target="_blank">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/samikalamallah/" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
             <a
               id="profile-link"
-              href="https://github.com/SamX23"
+              href="https://github.com/samx23/"
               target="_blank"
-              >Github</a
             >
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="https://wa.me/6289657511134" target="_blank">
+              <i class="fa fa-whatsapp"></i>
+            </a>
           </div>
         </div>
-        <footer>Footer</footer>
+        <footer class="text-center m-2">
+          Copyright &COPY; 2021 - Sami Kalammallah
+        </footer>
       </div>
     </main>
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="./test.js"></script>
 </html>
